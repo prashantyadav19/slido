@@ -1,0 +1,31 @@
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+      <div ng-controller="mainCtrl as main" ng-cloak>
+          <div class="menu">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <a>Sample App</a>
+                  </div>
+                  <div>
+                      <ul class="usernameCss nav navbar-nav navbar-right" ng-hide=main.loggedInUser ng-cloak>
+                          <li class="activeMenu" ng-cloak><a ui-sref="login">Log In</a></li>
+                          <li class="activeMenu" ng-cloak><a ui-sref="signup">Sign Up</a></li>
+                      </ul>
+                      <ul ng-show="main.loggedInUser" class="usernameCss nav navbar-nav navbar-right">
+                          <li class="activeMenu"><a href="#" ng-cloak>Hello, {{main.loggedInUser.profile.name}}</a></li>
+                          <li class="activeMenu"><a ng-click="main.logout()" ng-cloak>Logout</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          </div>
+
+        <div>
+            <div ui-view=""></div>
+        </div>
+</body>

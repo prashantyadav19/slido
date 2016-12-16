@@ -1,0 +1,138 @@
+<div class="modal-dialog" ng-show="vm.forgetPassword">
+    <div class="modal-content login_modal_content">
+        <div class="modal-header login_modal_header">
+
+            <h2 class="modal-title" id="myModalLabel">Login</h2>
+        </div>
+        <div class="modal-body login-modal">
+
+            <div class="clearfix"></div>
+            <div>
+                <div class='modal-body-left signUpForm'>
+                    <div class="form-group">
+                        <input type="email" id="username" placeholder="Enter your email" ng-model="vm.username" value=""
+                               class="form-control login-field">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-pass" placeholder="Password" ng-model="vm.password" value=""
+                               class="form-control login-field">
+                    </div>
+                    <a class="btn btn-success modal-login-btn" ng-click="vm.login()">Login</a>
+                </div>
+            </div>
+            <a class="text-right" ng-click="vm.forgotPassword()">forgot password </a>
+
+            <div class="clearfix"></div>
+
+            <div class="form-group modalLoginBtn">
+                New Here? <a ui-sref="signup" class="btn btn-success btn-default"> Register</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-footer login_modal_footer">
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-dialog" ng-show="!vm.forgetPassword">
+    <div class="modal-content login_modal_content">
+        <div class="modal-header login_modal_header">
+            <h2 class="modal-title" id="myModalLabel">Forgot Password</h2>
+        </div>
+        <div class="modal-body login-modal">
+
+            <div class="clearfix"></div>
+            <div>
+                <div class='modal-body-left signUpForm'>
+                    <div class="row">
+                        <div class="input-field col-sm-12 login-input-field">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="text" placeholder="Enter email address" class="form-control"
+                                   ng-model="vm.registeredEmail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-lg-12 col-sm-12 col-md-12 text-center" ng-show="!vm.loding">
+                            <a class="btn btn-success waves-effect waves-light modal-login-btn"
+                               ng-click="vm.sendOtp(vm.registeredEmail)">send</a>
+                        </div>
+                        <div class="input-field col-lg-12 col-sm-12 col-md-12 text-center" ng-show="vm.loding">
+                            <a class="btn btn-success waves-effect waves-light modal-login-btn">
+                                Loding...</a>
+                        </div>
+                        <div class="input-field col-lg-12 col-sm-12 col-md-12 text-center">
+                            <a class="btn btn-success btn-default" ng-click="vm.backToLogin()">back to login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="enterOtpModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content otpContent">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">OTP</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="input-field col-sm-12 login-input-field">
+                        <label for="email"></label>
+                        <input id="email" type="text" placeholder="Enter OTP" class="form-control"
+                               ng-model="vm.otp">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" ng-click="vm.verifyOtp(vm.otp)">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="resetPasswordModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content otpContent">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Reset Password</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="input-field col-sm-12 login-input-field">
+                        <label for="nwPass"></label>
+                        <input id="nwPass" type="password" placeholder="New Password" class="form-control"
+                               ng-model="vm.newPassword">
+                    </div>
+                    <div class="input-field col-sm-12 login-input-field">
+                        <label for="rePass"></label>
+                        <input id="rePass" type="password" placeholder="Confirm Password" class="form-control"
+                               ng-model="vm.confirmPassword">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success"
+                        ng-click="vm.resetNewPassword(vm.newPassword, vm.confirmPassword)">Submit
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,152 @@
+.extraClass {
+    height: 122px;
+    position: relative;
+}
+
+.extraClass ul {
+    position: absolute;
+    bottom: 0;
+}
+.marginTop{
+    margin-top: 50px;
+}
+.m-top-15{
+    margin-top: 15px
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.addCategoryRow {
+    margin-bottom: 10px;
+}
+
+.newCategoryInput {
+    width: 600px;
+    margin-top: 5px;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+input{
+    width: 98% !important;
+    margin-top: 15px !important;
+}
+.btn-primary.button1 {
+    background: transparent !important;
+    border-color: rgb(5, 149, 210) !important;
+    color: rgb(5, 149, 210) !important;
+    font-weight: 500;
+}
+.btn-primary.button1:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(5, 149, 210) !important;
+    border-color: rgb(5, 149, 210) !important;
+}
+.logincssButton{
+    background: transparent !important;
+    border: 1px solid rgb(5, 149, 210) !important;
+    color: rgb(5, 149, 210) !important;
+    font-weight: 500;
+}
+.logincssButton:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(5, 149, 210) !important;
+    border-color: rgb(5, 149, 210) !important;
+}
+.login_modal_footer{margin-top:5px;}
+.login_modal_header .modal-title {text-align: center;font-family:'Philosopher',sans-serif; }
+.login_modal_content{top:50px}
+.form-group{position: relative;}
+.form-group .login-field-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    transition: all 0.25s ease 0s;
+    padding-top: 2%;
+}
+.login-modal{
+    width:100%;
+    padding-bottom:10px;
+}
+.login_modal_header, .login_modal_footer {background: #1bbc9b !important;color:#fff;}
+.modal-register-btn{margin: 4% 33% 2% 33% ;width:100%;}
+.login-modal input{height:40px; box-shadow: none; border:1px solid #ddd;}
+.modal-body-left{float:left; width:100%; }
+.modal-body-left input{float:left; width:100%; }
+.modal-body-right{float:right; width:47%;}
+.login-link{padding:0 20%;}
+
+
+.modal-login-btn{width:98%;height:40px; margin-bottom:10px;margin-top:10px; line-height: 25px; font-weight: bold;}
+#modal-launcher{margin: 30% 0 0 30%; }
+#modal-launcher{ margin: 0px; color: #fff !important; border: 0px !important;}
+.navigation ul li a{ text-decoration: none;}
+.modalLoginBtn{ margin-left: 34%; margin-top: 20px;}
+
+
+.menu
+{
+    background-color: #198871;
+    width:100%;
+    height: auto;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.menu  .navbar-nav > .active > a
+{
+    color: white;
+    font-weight: bold;
+}
+
+.menu  .navbar-nav >  li >  a
+{
+    font-size: 13px;
+    color: white;
+    padding: 10px 35px;
+
+}
+.menu  .navbar-nav >  li >  a:hover
+{
+    background-color: #04A3ED;
+}
+
+.navbar-header > a
+{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px 30px;
+}
+.navbar-header > a:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+.modal-backdrop {
+    background-color: #ccc;
+}
+.otpContent{
+    margin-top: 79px;
+}
+.spanCss p{
+    font-size: 15px;
+    margin: 15px 0 10px;
+}
+

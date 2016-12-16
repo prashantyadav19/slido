@@ -1,0 +1,15 @@
+<div class="row marginTop">
+    <div class="col-md-4 col-md-offset-4">
+        <h2>Welcome to dashboard</h2>
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+        <label for="inputType"></label>
+        <input id="inputType" type="text" placeholder="Type Anything" class="form-control"
+               ng-model="vm.anything">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 spanCss">
+       <p><span ng-if="vm.anything">You Type - </span>{{vm.anything}}</p>
+    </div>
+</div>
